@@ -1,97 +1,159 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<title>Page Title</title>
+<title>Mathefüchse</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
+* {
+  box-sizing: border-box;
+}
+
 body {
-	font-family: Times New Roman, Helvetica, sans-serif;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Style the header */
+header {
+  background-color: #666;
+  padding: 30px;
+  text-align: center;
+  font-size: 35px;
+  color: white;
+}
+
+nav {
+  float: left;
+  width: 30%;
+  height: 2500px;
+  background: #ccc;
+  padding: 20px;
+}
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+article {
+  float: left;
+  padding: 20px;
+  width: 70%;
+  background-color: #f1f1f1;
+  height: 2500px; 
+}
+
+section:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+footer {
+  background-color: #777;
+  padding: 10px;
+  text-align: center;
+  color: white;
+}
+
+@media (max-width: 600px) {
+  nav, article {
+    width: 100%;
+    height: auto;
+  }
 }
 </style>
 </head>
-<h1 style="text-align: center"> <font size="10">  Mathefuechse </font> </h1>
-<p1 style="text-align: center"> <pre> <font size="6"> <u> Datenschieberein & Paradoxa </u> </font> </pre> </p1>
-<p0 style="text-align: center" > <pre> Du möchtest nicht mehr auf irreführende und flasch aussagende Graphen reinfallen? 
+<body>
+
+<h2 style="text-align: center;"> <font size="10"> Mathefüchse</font></h2>
+<p>Du möchtest nicht mehr auf irreführende und flasch aussagende Graphen reinfallen? 
 Dann bist du hier genau richtig, wir zeigen dir im folgenden Beitrag alle hinterlistigen Tricks
-mit welchen ganz einfach wissenschaftliche Aussagen um manipuliert werden können. </pre> </p0>
-<p2 style="text-align: center">
-<pre>
-<u> 1. Verwechslung von Anzahl und Anteil: </u>
--sehr versteckt und irreführend selbst Nutzer fallen darauf rein
--es entstehen effekte wo eigentlich keine sind
--fehl interpretation von wissenschaftlichen Daten wodurch 
-schlussfolgerungen gemacht werden die das gegenteil dessen besagen was sie eigentlich belegen
+mit welchen ganz einfach wissenschaftliche Aussagen um manipuliert werden können.</p>
 
-Ein Beispiel:
+<header>
+  <h2>Datenschieberein & Paradoxa</h2>
+</header>
 
-Für die Fischereiwirtschaft ist der Anteil der Nutzfische am Gesamtfang,
-das heißt der Prozentsatz der Fische die man Verkaufen kann.
-Abbildung 3 zeigt eine (erfundene) Entwicklung in einem Fluss.
-Eine Kläranlage wurde dort vor rund 10 Jahren in Betrieb genommen,
-sodass sich der Eintrag von Schadstoffen in das Flusswasser reduzierte.
-Innerhalb der nächsten 10 Jahre ist der Anteil der Nutzfische 
-von 10 auf 90 Prozent angestiegen. Das entspricht einer verzehnfachung des Bestandes.
-Das hat das Landesministerium erfreut und
-leitete ähnliche Maßnahmen an anderen Orten ein.
-</pre>
-</p2>
-<p style="text-align: center"> <a href="https://abload.de/image.php?img=fische0bk8t.png"> <img src="https://abload.de/img/fische0bk8t.png" /></a> </p>
-<p3 style="text-align: center">
-<pre>
-<i> Abbildung 1: Entwicklung des Nutzfischbestandes in einem Fluss 
-nach Inbetriebnahme einer Kläranlage </i>
+<section>
+  <nav>
+    <ul>
+      <li><a href="#1. Verwechslung von Anzahl und Anteil">1. Verwechslung von Anzahl und Anteil</a></li>
+      <li><a href="#2. Unzulässiges Gruppieren von Daten">2. Unzulässiges Gruppieren von Daten</a></li>
+      <li><a href="#3. Unfaire Vergleiche">3. Unfaire Vergleiche</a></li>
 
-Dennoch wurde hier die Verwechslung von Anteil und Anzahl ausgenutzt.
-Denn Abbildung zwei zeigt eine der Möglichkeiten wie sich die tatächliche
-Anzahl der Fische verändert haben könnte.
-Beispielsweise könnte die Anzahl der Nutzfische konstant geblieben sein
-sich jedoch die Anzahl der anderen Fische drastisch abgenommen haben.
-Wodurch sich natürlich der Anteil der Nutzfische steigt.
-</pre>
-</p3>
-<p style="text-align: center"> <a href="https://abload.de/image.php?img=fische279jn2.png"><img src="https://abload.de/img/fische279jn2.png" /></a> </p>
-<p4 style="text-align: center">
-<pre> <i> Abbildung 2: Zeigt realen rückgang der der Fisch arten </i> </pre>
-<p5 style="text-align: center"> 
-<pre> <u> 2. Unzulässiges Gruppieren von Daten: </u>
-"Der Mensch besteht aus über 80 Prozent aus Eitelkeit und Wasser" 
--Hans-Hermann Dubben
+    </ul>
+  </nav>
+  
+  <article>
+    <h1 id="1. Verwechslung von Anzahl und Anteil">1. Verwechslung von Anzahl und Anteil</h1>
+    <p>-sehr versteckt und irreführend selbst Nutzer fallen darauf rein</p>
+    <p>-es entstehen effekte wo eigentlich keine sind</p>
+	<p>-fehl interpretation von wissenschaftlichen Daten wodurch schlussfolgerungen gemacht werden die das gegenteil dessen besagen was sie eigentlich belegen </p>
+	<p>Ein Beispiel:</p>
+	<p>Für die Fischereiwirtschaft ist der Anteil der Nutzfische am Gesamtfang,
+	das heißt der Prozentsatz der Fische die man Verkaufen kann.
+	Abbildung 3 zeigt eine (erfundene) Entwicklung in einem Fluss.
+	Eine Kläranlage wurde dort vor rund 10 Jahren in Betrieb genommen,
+	sodass sich der Eintrag von Schadstoffen in das Flusswasser reduzierte.
+	Innerhalb der nächsten 10 Jahre ist der Anteil der Nutzfische 
+	von 10 auf 90 Prozent angestiegen. Das entspricht einer verzehnfachung des Bestandes.
+	Das hat das Landesministerium erfreut und
+	leitete ähnliche Maßnahmen an anderen Orten ein.</p>
+	<p <a href="https://abload.de/image.php?img=fische0bk8t.png"> <img src="https://abload.de/img/fische0bk8t.png" width="250" height="250" /></a> </p>
+	<p> <i>Abbildung 1: Entwicklung des Nutzfischbestandes in einem Fluss nach Inbetriebnahme einer Kläranlage </i> </pre>
+	<p>Dennoch wurde hier die Verwechslung von Anteil und Anzahl ausgenutzt.
+	Denn Abbildung zwei zeigt eine der Möglichkeiten wie sich die tatächliche
+	Anzahl der Fische verändert haben könnte.
+	Beispielsweise könnte die Anzahl der Nutzfische konstant geblieben sein
+	sich jedoch die Anzahl der anderen Fische drastisch abgenommen haben.
+	Wodurch sich natürlich der Anteil der Nutzfische steigt.<p>
+	<p <a href="https://abload.de/image.php?img=fische279jn2.png"><img src="https://abload.de/img/fische279jn2.png" width="250" height="250"/></a> </p>
+	<p> <i> Abbildung 2: Zeigt realen rückgang der der Fisch arten </i> </p>
+	
+	<h2 id="2. Unzulässiges Gruppieren von Daten">2. Unzulässiges Gruppieren von Daten</h2>
+	<p> "Der Mensch besteht aus über 80 Prozent aus Eitelkeit und Wasser" <i> -Hans-Hermann Dubben </i> </p>
+	<p>Ein klassisches Beispiel für unzulässige Gruppierung von Daten ist z.B.
+	"Hunderttausende Tote und Obdachlose durch Überschwemmung in Bangladesh". Das ist nähmlich 
+	dramatischer und passt besser in die Schlagzeile als "Zwei Tote und etwas Hunderttausende Obdachlose".
+	Hierdurch werden Leser mit der reinen Wahrheit in die Irre geführt.</p>
+	
+	<p> Ein weiteres wissenschaftlicheres Beispiel zeigt Abbildung 3. </p>
+	<a href="https://abload.de/image.php?img=unzulssigevergleichewmk07.png"><img src="https://abload.de/img/unzulssigevergleichewmk07.png" width="350" height="250" /></a>
 
-Ein klassisches Beispiel für unzulässige Gruppierung von Daten ist z.B.
-"Hunderttausende Tote und Obdachlose durch Überschwemmung in Bangladesh". Das ist nähmlich 
-dramatischer und passt besser in die Schlagzeile als "Zwei Tote und etwas Hunderttausende Obdachlose".
-Hierdurch werden Leser mit der reinen Wahrheit in die Irre geführt.
-</pre> 
-</p5>
-<p6 style="text-align: center">
-<pre>
-Ein weiteres wissenschaftlicheres Beispiel zeigt Abbildung 3.
-
-<a href="https://abload.de/image.php?img=unzulssigevergleichewmk07.png"><img src="https://abload.de/img/unzulssigevergleichewmk07.png" /></a>
-
-</pre>
-<p6 style="text-align: center">
-<pre>
-<u> 3. Unfaire Vergleiche </u>
-Schwimmen wie ein Fisch ... im Wasser? Von Wasser hat aber niemand etwas 
-gesagt oder geschrieben. Dennoch wird es damit in verbindung gebracht.
-Genau mit dieser Methode ist es möglich Leser reinzulegen.
-
-Wie das zeigen wir euch im folgenden Beispiel:
-
-"Die Erkältungszeit hält an. Achten Sie auf auf wetterfeste Kleidung, trotz erster 
-warmen Sonnenstrahlen. Wenn der Virus sich in Bronchien und Nasenebenhölen festgesetz hat, wird es wurklich 
-unangenehm. Lässt uns der Hersteller von Gelomytrol forte auf seiner Website wissen.
-"In einer GCP-konformenn kontrollierten Studie würde eindrucksvoll bestätigt, dass Gelomytrol forte
-bei der Behandlung der akuten Bronchitis einer antibiotischen Therapie mindestens gleichwertig ist"
-
-
-
-Um es anders auszudrücken es ist eine erfreulich Nachricht da mit Antibiotikum möglichst sparsam
-umgegangen werden sollte. Ein Antibiotikum wird bei Infektionen eingesetzt, die bakteriell bedingt 
-sind. Auf Viren haben Antibiotika keine Wirkung.
+	<h3 id="3. Unfaire Vergleiche">3. Unfaire Vergleiche</h3>
+	<p> Schwimmen wie ein Fisch ... im Wasser? Von Wasser hat aber niemand etwas 
+	gesagt oder geschrieben. Dennoch wird es damit in Verbindung gebracht.
+	Genau mit dieser Methode ist es möglich Leser reinzulegen.</p>
+	<p>Wie das zeigen wir euch im folgenden Beispiel:</p>
+	<P>"Die Erkältungszeit hält an. Achten Sie auf auf wetterfeste Kleidung, trotz erster 
+	warmen Sonnenstrahlen. Wenn der Virus sich in Bronchien und Nasenebenhölen festgesetz hat, wird es wurklich 
+	unangenehm. Lässt uns der Hersteller von Gelomytrol forte auf seiner Website wissen.
+	"In einer GCP-konformenn kontrollierten Studie würde eindrucksvoll bestätigt, dass Gelomytrol forte
+	bei der Behandlung der akuten Bronchitis einer antibiotischen Therapie mindestens gleichwertig ist" </p>
+	<p>Um es anders auszudrücken es ist eine erfreulich Nachricht da mit Antibiotikum möglichst sparsam
+	umgegangen werden sollte. Ein Antibiotikum wird bei Infektionen eingesetzt, die bakteriell bedingt 
+	sind. Auf Viren haben Antibiotika keine Wirkung.</p>
+	
+	
+	
+	
+  </article>
+  
+  
+  
+</section>
 
 
 
+
+
+
+
+
+<footer>
+  <p>Footer</p>
+</footer>
 
 </body>
 </html>
